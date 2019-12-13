@@ -54,6 +54,8 @@ body {
     text-transform: uppercase;
     font-family: 'LOZ-font', sans-serif;
     position: relative;
+    backface-visibility: hidden;
+    margin-bottom: 40px;
 }
 
 .heading-primary-legend {
@@ -62,8 +64,7 @@ body {
     font-weight: 400;
     letter-spacing: 28px;
     text-align: right;
-    animation-name: moveInRight;
-    animation-duration: 2.5s;
+    animation: moveInRight 2s ease-out;
 }
 
 .heading-primary-marceline {
@@ -71,8 +72,7 @@ body {
     font-weight: 400;
     letter-spacing: 10px;
     line-height: 200%;
-    animation-name: moveInLeft;
-    animation-duration: 2.5s;
+    animation: moveInLeft 2s ease-out;
 }
 
 .heading-primary-marceline-main {
@@ -89,8 +89,7 @@ body {
     font-weight: 400;
     letter-spacing: 8px;
     text-align: right;
-    animation-name: moveInRight;
-    animation-duration: 2.5s;
+    animation: moveInRight 2s ease-out;
 }
 
 @keyframes moveInLeft {
@@ -112,5 +111,40 @@ body {
     100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    margin: 1em;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+.btn-icon {
+    opacity: 1;
+    height: 60px;
+    animation: fadeInDown 3s ease-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

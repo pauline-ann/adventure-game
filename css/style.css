@@ -38,17 +38,17 @@ body {
     position: relative;
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 5rem;
 }
 
-.text-box {
+.header__text-box {
     position: absolute;
     top: 55%;
     left: 50%;
@@ -64,7 +64,7 @@ body {
     margin-bottom: 4rem;
 }
 
-.heading-primary-legend {
+.heading-primary--legend {
     display: block;
     font-size: 2.5rem;
     font-weight: 400;
@@ -73,7 +73,7 @@ body {
     animation: moveInRight 2s ease-out;
 }
 
-.heading-primary-marceline {
+.heading-primary--marceline {
     display: block;
     font-weight: 400;
     letter-spacing: 1rem;
@@ -81,15 +81,15 @@ body {
     animation: moveInLeft 2s ease-out;
 }
 
-.heading-primary-marceline-main {
+.heading-primary--marceline--1 {
     font-size: 14rem;
 }
 
-.heading-primary-marceline-sub {
+.heading-primary--marceline--2 {
     font-size: 10rem;
 }
 
-.heading-primary-breath {
+.heading-primary--breath {
     display: block;
     font-size: 3rem;
     font-weight: 400;
@@ -137,8 +137,11 @@ body {
 }
 
 .btn-icon {
-    opacity: 1;
     height: 6rem;
+}
+
+.btn--animated {
+    opacity: 1;
     animation: fadeInDown 1s ease-out 1.5s;
     animation-fill-mode: backwards;
 }

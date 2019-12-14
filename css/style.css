@@ -140,16 +140,28 @@ body {
     height: 6rem;
 }
 
-.btn--animated {
+.btn--animated--1 {
     opacity: 1;
-    animation: fadeInDown 1s ease-out 1.5s;
+    animation: fadeInDown 1.5s ease-out 1.5s;
+    animation-fill-mode: backwards;
+}
+
+.btn--animated--2 {
+    opacity: 1;
+    animation: fadeInDown 1.5s ease-out 1.9s;
+    animation-fill-mode: backwards;
+}
+
+.btn--animated--3 {
+    opacity: 1;
+    animation: fadeInDown 1.5s ease-out 2.3s;
     animation-fill-mode: backwards;
 }
 
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translateY(-2rem);
+        transform: translateY(-3rem);
     }
     100% {
         opacity: 1;

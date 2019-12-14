@@ -6,14 +6,16 @@
         format('truetype');
 }
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 
 body {
@@ -22,6 +24,7 @@ body {
     font-weight: 300;
     line-height: 1.5;
     color: #777;
+    box-sizing: border-box;
 }
 
 .header {

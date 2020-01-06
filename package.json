@@ -1,0 +1,23 @@
+{
+  "name": "adventure-game",
+  "version": "1.0.0",
+  "description": "Landing page for The Legend of Marceline",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauline-ann/adventure-game.git"
+  },
+  "author": "Pauline",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pauline-ann/adventure-game/issues"
+  },
+  "homepage": "https://github.com/pauline-ann/adventure-game#readme"
+}

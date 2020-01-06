@@ -1,6 +1,8 @@
 $color-primary: rgb(190, 160, 105);
 $color-secondary: rgb(222, 76, 72);
 $color-text-primary: rgb(119, 118, 123);
+$color-grey-dark: #777;
+$color-white: #fff;
 
 @font-face {
     font-family: "LOZ-font";
@@ -27,7 +29,7 @@ body {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.5;
-    color: #777;
+    color: $color-grey-dark;
     box-sizing: border-box;
 }
 
@@ -40,66 +42,66 @@ body {
     background-size: cover;
     background-position: top;
     position: relative;
-}
 
-.header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-}
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
 
-.header__logo {
-    height: 5rem;
-}
+    &__logo {
+        height: 5rem;
+    }
 
-.header__text-box {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    &__text-box {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }
 
 .heading-primary {
-    color: #ffffff;
+    color: $color-white;
     text-transform: uppercase;
     font-family: 'LOZ-font', sans-serif;
     backface-visibility: hidden;
     margin-bottom: 4rem;
-}
 
-.heading-primary--legend {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: 400;
-    letter-spacing: 2.8rem;
-    text-align: right;
-    animation: moveInRight 2s ease-out;
-}
+    &--legend {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 400;
+        letter-spacing: 2.8rem;
+        text-align: right;
+        animation: moveInRight 2s ease-out;
+    }
+    
+    &--marceline {
+        display: block;
+        font-weight: 400;
+        letter-spacing: 1rem;
+        line-height: 200%;
+        animation: moveInLeft 2s ease-out;
 
-.heading-primary--marceline {
-    display: block;
-    font-weight: 400;
-    letter-spacing: 1rem;
-    line-height: 200%;
-    animation: moveInLeft 2s ease-out;
-}
-
-.heading-primary--marceline--1 {
-    font-size: 14rem;
-}
-
-.heading-primary--marceline--2 {
-    font-size: 10rem;
-}
-
-.heading-primary--breath {
-    display: block;
-    font-size: 3rem;
-    font-weight: 400;
-    letter-spacing: .8rem;
-    text-align: right;
-    animation: moveInRight 2s ease-out;
+        &--big {
+            font-size: 14rem;
+        }
+        
+        &--small {
+            font-size: 10rem;
+        }
+    }
+        
+    &--breath {
+        display: block;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: .8rem;
+        text-align: right;
+        animation: moveInRight 2s ease-out;
+    }
 }
 
 @keyframes moveInLeft {
@@ -124,42 +126,46 @@ body {
     }
 }
 
-.btn:link,
-.btn:visited {
-    margin: 1rem;
-    display: inline-block;
-    transition: all .2s;
-}
+.btn {
+    &:link,
+    &:visited {
+        margin: 1rem;
+        display: inline-block;
+        transition: all .2s;
+    }
+    
+    &:hover {
+        transform: translateY(-.3rem);
+        /* box-shadow: 0 10px 20px rgba(0, 0, 0, .2); */
+    }
+    
+    &:active {
+        transform: translateY(-.1rem);
+    }
+    
+    &-icon {
+        height: 6rem;
+    }
 
-.btn:hover {
-    transform: translateY(-.3rem);
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, .2); */
-}
-
-.btn:active {
-    transform: translateY(-.1rem);
-}
-
-.btn-icon {
-    height: 6rem;
-}
-
-.btn--animated--1 {
-    opacity: 1;
-    animation: fadeInDown 1.5s ease-out 1.5s;
-    animation-fill-mode: backwards;
-}
-
-.btn--animated--2 {
-    opacity: 1;
-    animation: fadeInDown 1.5s ease-out 1.9s;
-    animation-fill-mode: backwards;
-}
-
-.btn--animated--3 {
-    opacity: 1;
-    animation: fadeInDown 1.5s ease-out 2.3s;
-    animation-fill-mode: backwards;
+    &--animated {
+        &--fastest {
+            opacity: 1;
+            animation: fadeInDown 1.5s ease-out 1.5s;
+            animation-fill-mode: backwards;
+        }
+        
+        &--faster {
+            opacity: 1;
+            animation: fadeInDown 1.5s ease-out 1.9s;
+            animation-fill-mode: backwards;
+        }
+        
+        &--fast {
+            opacity: 1;
+            animation: fadeInDown 1.5s ease-out 2.3s;
+            animation-fill-mode: backwards;
+        }
+    }
 }
 
 @keyframes fadeInDown {
@@ -172,17 +178,3 @@ body {
         transform: translateY(0);
     }
 }
-
-/* @keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    66% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-} */

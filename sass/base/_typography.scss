@@ -1,0 +1,49 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: $color-grey-dark;
+}
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    font-family: 'LOZ-font', sans-serif;
+    backface-visibility: hidden;
+    margin-bottom: 4rem;
+
+    &--legend {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 400;
+        letter-spacing: 2.8rem;
+        text-align: right;
+        animation: moveInRight 2s ease-out;
+    }
+    
+    &--marceline {
+        display: block;
+        font-weight: 400;
+        letter-spacing: 1rem;
+        line-height: 200%;
+        animation: moveInLeft 2s ease-out;
+
+        &--big {
+            font-size: 14rem;
+        }
+        
+        &--small {
+            font-size: 10rem;
+        }
+    }
+        
+    &--breath {
+        display: block;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: .8rem;
+        text-align: right;
+        animation: moveInRight 2s ease-out;
+    }
+}

@@ -1,0 +1,41 @@
+.btn {
+    &:link,
+    &:visited {
+        margin: 1rem;
+        display: inline-block;
+        transition: all .2s;
+    }
+    
+    &:hover {
+        transform: translateY(-.3rem);
+        /* box-shadow: 0 10px 20px rgba(0, 0, 0, .2); */
+    }
+    
+    &:active {
+        transform: translateY(-.1rem);
+    }
+    
+    &-icon {
+        height: 6rem;
+    }
+
+    &--animated {
+        &--fastest {
+            opacity: 1;
+            animation: fadeInDown 1.5s ease-out 1.5s;
+            animation-fill-mode: backwards;
+        }
+        
+        &--faster {
+            opacity: 1;
+            animation: fadeInDown 1.5s ease-out 1.9s;
+            animation-fill-mode: backwards;
+        }
+        
+        &--fast {
+            opacity: 1;
+            animation: fadeInDown 1.5s ease-out 2.3s;
+            animation-fill-mode: backwards;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.header {
+    height: 94vh;
+    background-image: linear-gradient(to right bottom,
+    rgba(238, 238, 238, .2),
+    rgba(126, 126, 126, .2)),
+    url(../img/LOM-temp-1.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 5rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

@@ -1,0 +1,26 @@
+// Resets and styles for HTML and body element selectors
+
+@font-face {
+    font-family: "LOZ-font";
+    src:
+        local('Triforce'),
+        url(../fonts/Triforce.ttf)
+        format('truetype');
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // Global definition defining what 1rem is
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}

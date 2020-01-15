@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "LOZ-font";
-  src: local("Triforce"), url(../fonts/Triforce.ttf) format("truetype"); }
+  src: local("Triforce"), url(fonts/Triforce.ttf) format("truetype"); }
 
 *,
 *::after,
@@ -81,7 +81,8 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #fcf7f4, #90562e);
+  display: inline-block;
+  background-image: linear-gradient(to right, #e9ceba, #b76e3a);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -184,6 +185,26 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 3rem rgba(20, 20, 20, 0.15);
+  transition: all .3s; }
+  .feature-box__icon {
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #8bc2e7, #216c9f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: scale(1.02) translateY(-1rem);
+    box-shadow: 0 2.5rem 3rem rgba(20, 20, 20, 0.3); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -234,3 +255,12 @@ body {
   background-color: #f7f7f7;
   padding: 15rem 0;
   margin-top: -10vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.2), rgba(126, 126, 126, 0.2)), url(../img/LOM-temp-2.jpg);
+  background-size: cover;
+  transform: skewY(-4deg);
+  margin-top: -5.5rem; }
+  .section-features > * {
+    transform: skewY(4deg); }

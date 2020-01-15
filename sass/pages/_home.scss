@@ -11,4 +11,10 @@
     rgba(126, 126, 126, .2)),
     url(../img/LOM-temp-2.jpg);
     background-size: cover;
+    transform: skewY(-4deg);
+    margin-top: -5.5rem;
+
+    & > * {
+        transform: skewY(4deg);
+    }
 }

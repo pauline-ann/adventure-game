@@ -81,6 +81,8 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  font-family: 'LOZ-font', sans-serif;
+  letter-spacing: .7rem !important;
   display: inline-block;
   background-image: linear-gradient(to right, #e9ceba, #b76e3a);
   background-clip: text;
@@ -160,6 +162,52 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.card {
+  perspective: 100rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    color: #777;
+    font-size: 5rem;
+    height: 50rem;
+    width: 100%;
+    border-radius: 1rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(20, 20, 20, 0.15); }
+    .card__side--front {
+      background-image: linear-gradient(to bottom, #fff, #f7f7f7); }
+    .card__side--back {
+      transform: rotateY(-180deg); }
+      .card__side--back--1 {
+        background-image: linear-gradient(to bottom, #ffc352, lemonchiffon); }
+      .card__side--back--2 {
+        background-image: linear-gradient(to bottom, #fd6e6e, pink); }
+      .card__side--back--3 {
+        background-image: linear-gradient(to bottom, #f888f8, lightblue); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 22rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 85%); }
+    .card__picture--1 {
+      background-image: linear-gradient(to bottom, #ffc352, lemonchiffon), url(../img/LOM-temp-3.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to bottom, #fd6e6e, pink), url(../img/LOM-temp-3.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to bottom, #f888f8, lightblue), url(../img/LOM-temp-3.jpg); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -197,7 +245,7 @@ body {
     font-size: 5.5rem;
     margin-bottom: 1rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #8bc2e7, #216c9f);
+    background-image: linear-gradient(to right, #b59d91, #493931);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent; }
@@ -236,6 +284,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.2), rgba(126, 126, 126, 0.2)), url(../img/LOM-temp-1.jpg);
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   position: relative; }
   .header__logo-box {
@@ -253,14 +302,19 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 15rem 0;
+  padding: 18rem 0;
   margin-top: -10vh; }
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.2), rgba(126, 126, 126, 0.2)), url(../img/LOM-temp-2.jpg);
+  background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.2), rgba(126, 126, 126, 0.2)), url(../img/LOM-temp-3.jpg);
   background-size: cover;
   transform: skewY(-4deg);
   margin-top: -5.5rem; }
   .section-features > * {
     transform: skewY(4deg); }
+
+.section-updates {
+  background-color: #f7f7f7;
+  padding: 18rem 0;
+  margin-top: -5rem; }

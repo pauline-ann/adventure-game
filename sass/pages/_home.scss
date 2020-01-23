@@ -1,6 +1,6 @@
 .section-about {
     background-color: $color-grey-light;
-    padding: 15rem 0;
+    padding: 18rem 0;
     margin-top: -10vh;
 }
 
@@ -9,7 +9,7 @@
     background-image: linear-gradient(to right bottom,
     rgba(238, 238, 238, .2),
     rgba(126, 126, 126, .2)),
-    url(../img/LOM-temp-2.jpg);
+    url(../img/LOM-temp-3.jpg);
     background-size: cover;
     transform: skewY(-4deg);
     margin-top: -5.5rem;
@@ -17,4 +17,10 @@
     & > * {
         transform: skewY(4deg);
     }
+}
+
+.section-updates {
+    background-color: $color-grey-light;
+    padding: 18rem 0;
+    margin-top: -5rem;
 }

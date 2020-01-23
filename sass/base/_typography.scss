@@ -52,6 +52,8 @@ body {
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
+    font-family: 'LOZ-font', sans-serif;
+    letter-spacing: .7rem !important;
     display: inline-block;
     background-image: linear-gradient(to right, lighten($color-secondary, 15%),darken($color-secondary, 20%));
     background-clip: text;;

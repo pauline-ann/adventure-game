@@ -1,5 +1,5 @@
 node_modules
 .DS_Store
-.sass-cache*
-.css.map
-css/*
+.sass-cache
+.sass-cache/*
+**.css.map

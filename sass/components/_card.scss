@@ -7,8 +7,6 @@
     height: 50rem;
 
     &__side {
-        color: $color-grey-dark;
-        font-size: 5rem;
         height: 50rem;
         width: 100%;
         border-radius: 1rem;
@@ -23,22 +21,30 @@
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
-            background-image: linear-gradient(to bottom, $color-white, $color-grey-light);
+            background-image: linear-gradient(to bottom,
+            $color-white,
+            $color-grey-light);
         }
 
         &--back {
             transform: rotateY(-180deg);
 
             &--1 {
-                background-image: linear-gradient(to bottom, rgb(255, 195, 82), lemonchiffon);
+                background-image: linear-gradient(to bottom,
+                rgb(255, 195, 82),
+                rgb(255, 250, 205));
             }
 
             &--2 {
-                background-image: linear-gradient(to bottom, rgb(253, 110, 110), pink);
+                background-image: linear-gradient(to bottom,
+                rgb(253, 110, 110),
+                rgb(255, 192, 203));
             }
 
             &--3 {
-                background-image: linear-gradient(to bottom, rgb(248, 136, 248), lightblue);
+                background-image: linear-gradient(to bottom,
+                rgb(248, 136, 248),
+                rgb(173, 216, 230));
             }
         }
     }
@@ -56,24 +62,61 @@
         background-size: cover;
         height: 22rem;
         background-blend-mode: screen;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 85%);
-        clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 85%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 80%);
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 80%);
 
         &--1 {
-            background-image: linear-gradient(to bottom, rgb(255, 195, 82), lemonchiffon), url(../img/LOM-temp-3.jpg);
+            background-image: linear-gradient(to bottom,
+            rgb(255, 195, 82),
+            rgb(255, 250, 205)),
+            url(../img/LOM-temp-3.jpg);
         }
 
         &--2 {
-            background-image: linear-gradient(to bottom, rgb(253, 110, 110), pink), url(../img/LOM-temp-3.jpg);
+            background-image: linear-gradient(to bottom,
+            rgb(253, 110, 110),
+            rgb(255, 192, 203)),
+            url(../img/LOM-temp-3.jpg);
         }
 
         &--3 {
-            background-image: linear-gradient(to bottom, rgb(248, 136, 248), lightblue), url(../img/LOM-temp-3.jpg);
+            background-image: linear-gradient(to bottom,
+            rgb(248, 136, 248),
+            rgb(173, 216, 230)),
+            url(../img/LOM-temp-3.jpg);
         }
     }
 
     &__heading {
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-grey-light;
+        position: absolute;
+        top: 16rem;
+        left: 2rem;
+        width: 75%;
+    }
 
+    &__heading-span {
+            
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+            rgba(255, 195, 82, .85),
+            rgba(255, 250, 205, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+            rgba(253, 110, 110, .85),
+            rgba(255, 194, 204, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+            rgba(248, 136, 248, .85),
+            rgba(173, 216, 230, .85));
+        }
     }
 
     // BACK SIDE STYLING

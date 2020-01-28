@@ -1,4 +1,8 @@
 .btn {
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+
     &:link,
     &:visited {
         margin: 1rem;
@@ -8,11 +12,10 @@
     
     &:hover {
         transform: translateY(-.3rem);
-        /* box-shadow: 0 10px 20px rgba(0, 0, 0, .2); */
     }
     
     &:active {
-        transform: translateY(-.1rem);
+        transform: translateY(-.05rem);
     }
     
     &-icon {
@@ -36,6 +39,20 @@
             opacity: 1;
             animation: fadeInDown 1.5s ease-out 2.3s;
             animation-fill-mode: backwards;
+        }
+    }
+
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-dark;
+    }
+
+    &--brown {
+        background-color: $color-secondary;
+        color: $color-white;
+
+        &:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
         }
     }
 }

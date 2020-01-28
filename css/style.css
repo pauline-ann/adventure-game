@@ -113,35 +113,46 @@ body {
 .u-mb-6 {
   margin-bottom: 6rem; }
 
-.btn:link, .btn:visited {
-  margin: 1rem;
-  display: inline-block;
-  transition: all .2s; }
+.u-mb-9 {
+  margin-bottom: 9rem; }
 
-.btn:hover {
-  transform: translateY(-0.3rem);
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, .2); */ }
+.u-mb-10 {
+  margin-bottom: 10rem; }
 
-.btn:active {
-  transform: translateY(-0.1rem); }
-
-.btn-icon {
-  height: 6rem; }
-
-.btn--animated--fastest {
-  opacity: 1;
-  animation: fadeInDown 1.5s ease-out 1.5s;
-  animation-fill-mode: backwards; }
-
-.btn--animated--faster {
-  opacity: 1;
-  animation: fadeInDown 1.5s ease-out 1.9s;
-  animation-fill-mode: backwards; }
-
-.btn--animated--fast {
-  opacity: 1;
-  animation: fadeInDown 1.5s ease-out 2.3s;
-  animation-fill-mode: backwards; }
+.btn {
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none; }
+  .btn:link, .btn:visited {
+    margin: 1rem;
+    display: inline-block;
+    transition: all .2s; }
+  .btn:hover {
+    transform: translateY(-0.3rem); }
+  .btn:active {
+    transform: translateY(-0.05rem); }
+  .btn-icon {
+    height: 6rem; }
+  .btn--animated--fastest {
+    opacity: 1;
+    animation: fadeInDown 1.5s ease-out 1.5s;
+    animation-fill-mode: backwards; }
+  .btn--animated--faster {
+    opacity: 1;
+    animation: fadeInDown 1.5s ease-out 1.9s;
+    animation-fill-mode: backwards; }
+  .btn--animated--fast {
+    opacity: 1;
+    animation: fadeInDown 1.5s ease-out 2.3s;
+    animation-fill-mode: backwards; }
+  .btn--white {
+    background-color: #fff;
+    color: #777; }
+  .btn--brown {
+    background-color: #D7A480;
+    color: #fff; }
+    .btn--brown:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -168,18 +179,15 @@ body {
   position: relative;
   height: 50rem; }
   .card__side {
-    color: #777;
-    font-size: 5rem;
     height: 50rem;
     width: 100%;
-    border-radius: 1rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
     left: 0;
     backface-visibility: hidden;
-    border-radius: 5px;
     overflow: hidden;
+    border-radius: 1rem;
     box-shadow: 0 1.5rem 4rem rgba(20, 20, 20, 0.15); }
     .card__side--front {
       background-image: linear-gradient(to bottom, #fff, #f7f7f7); }
@@ -199,14 +207,64 @@ body {
     background-size: cover;
     height: 22rem;
     background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 85%);
-    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 85%); }
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 80%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 80%);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; }
     .card__picture--1 {
       background-image: linear-gradient(to bottom, #ffc352, lemonchiffon), url(../img/LOM-temp-3.jpg); }
     .card__picture--2 {
       background-image: linear-gradient(to bottom, #fd6e6e, pink), url(../img/LOM-temp-3.jpg); }
     .card__picture--3 {
       background-image: linear-gradient(to bottom, #f888f8, lightblue), url(../img/LOM-temp-3.jpg); }
+  .card__heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    position: absolute;
+    top: 16rem;
+    left: 2rem;
+    width: 75%; }
+  .card__heading-span {
+    padding: .5rem .6rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 195, 82, 0.85), rgba(255, 250, 205, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(253, 110, 110, 0.85), rgba(255, 194, 204, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(248, 136, 248, 0.85), rgba(173, 216, 230, 0.85)); }
+  .card__details {
+    padding: 3rem;
+    margin-top: -1.5rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #d1d1d1; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .card__date-box {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff; }
+    .card__date-box--release {
+      font-size: 1.6rem;
+      text-transform: uppercase; }
+    .card__date-box--value {
+      font-size: 5.5rem;
+      font-weight: 100; }
 
 .composition {
   position: relative; }
@@ -302,7 +360,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 18rem 0;
+  padding: 20rem 0;
   margin-top: -10vh; }
 
 .section-features {
@@ -316,5 +374,4 @@ body {
 
 .section-updates {
   background-color: #f7f7f7;
-  padding: 18rem 0;
-  margin-top: -5rem; }
+  padding: 18rem 0 13rem 0; }

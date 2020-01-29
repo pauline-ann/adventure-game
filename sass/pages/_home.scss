@@ -21,10 +21,10 @@
 
 .section-updates {
     background-color: $color-grey-light;
-    padding: 18rem 0 9rem 0;
+    padding: 18rem 0 6rem 0;
 }
 
 .section-reviews {
-    background-color: lighten($color-tertiary, 30%);
+    position: relative;
     padding: 15rem;
 }

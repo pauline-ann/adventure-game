@@ -1,20 +1,30 @@
 .btn {
-    padding: 1rem 1.5rem;
-    border-radius: 2rem;
-    text-decoration: none;
-
+    &,
     &:link,
     &:visited {
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+        text-decoration: none;
         margin: 1rem;
         display: inline-block;
         transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        // For <button> element
+        border: none;
+        cursor: pointer;
+        font-family: inherit !important;
+        font-weight: inherit !important;
     }
     
     &:hover {
         transform: translateY(-.3rem);
     }
     
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-.05rem);
     }
     

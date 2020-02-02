@@ -26,5 +26,30 @@
 
 .section-reviews {
     position: relative;
-    padding: 15rem;
+    padding: 15rem 0;
+}
+
+.section-preorder {
+    padding: 15rem 0;
+    background-image: linear-gradient(to bottom,
+    rgb(247, 181, 247),
+    rgb(189, 225, 236));
+}
+
+.preorder {
+    background-image: linear-gradient(100deg,
+    rgba($color-white, .8) 0%,
+    rgba($color-white, .8) 50%,
+    transparent 50%),
+    url(../img/LOM-temp-3.jpg);
+    background-size: 100%;
+    border-radius: .5rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+    height: 52rem;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
 }

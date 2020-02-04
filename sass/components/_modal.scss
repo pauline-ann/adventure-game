@@ -8,18 +8,19 @@
     z-index: 1300;
     
     &__content {
-        width: 60%;
+        width: 75%;
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 1rem;
-        padding: 3rem;
+        display: table;
+        overflow: hidden;
 
         @include center-element;
     }
 
     &__image-section {
         width: 33.3333333%;
-        float: left;
+        display: table-cell;
     }
 
     &__img {
@@ -28,11 +29,24 @@
     }
 
     &__text-section {
-        width: 66.66666666%;
-        float: right;
+        width: 66.66666667%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 4rem;
     }
 
     &__text {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
 
+        -moz-column-count: 2;
+        -moz-column-gap: 3rem;
+        column-count: 2;
+        column-gap: 3rem;
+
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
     }
 }

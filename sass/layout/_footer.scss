@@ -1,5 +1,5 @@
 .footer {
-    background-color: $color-grey-dark;
+    background-color: $color-brown-dark;
     padding: 9rem 0;
     font-size: 1.3rem;
     color: $color-grey-light;
@@ -47,6 +47,7 @@
         &:hover,
         &:active {
             transform: translateY(-.3rem) scale(1.02);
+            color: $color-beige;
         }
     }
 

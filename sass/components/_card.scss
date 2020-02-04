@@ -21,9 +21,7 @@
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
-            background-image: linear-gradient(to bottom,
-            $color-white,
-            $color-grey-light);
+            background-color: $color-white;
         }
 
         &--back {
@@ -31,20 +29,20 @@
 
             &--1 {
                 background-image: linear-gradient(to bottom,
-                rgb(255, 195, 82),
-                rgb(255, 250, 205));
+                $color-wood,
+                $color-beige);
             }
 
             &--2 {
                 background-image: linear-gradient(to bottom,
-                rgb(253, 110, 110),
-                rgb(255, 192, 203));
+                $color-wood,
+                $color-beige);
             }
 
             &--3 {
                 background-image: linear-gradient(to bottom,
-                rgb(248, 136, 248),
-                rgb(173, 216, 230));
+                $color-wood,
+                $color-beige);
             }
         }
     }
@@ -69,22 +67,22 @@
 
         &--1 {
             background-image: linear-gradient(to bottom,
-            rgb(255, 195, 82),
-            rgb(255, 250, 205)),
+            $color-brown-dark,
+            $color-beige),
             url(../img/LOM-temp-3.jpg);
         }
 
         &--2 {
             background-image: linear-gradient(to bottom,
-            rgb(253, 110, 110),
-            rgb(255, 192, 203)),
+            $color-brown-dark,
+            $color-beige),
             url(../img/LOM-temp-3.jpg);
         }
 
         &--3 {
             background-image: linear-gradient(to bottom,
-            rgb(248, 136, 248),
-            rgb(173, 216, 230)),
+            $color-brown-dark,
+            $color-beige),
             url(../img/LOM-temp-3.jpg);
         }
     }
@@ -93,7 +91,7 @@
         font-size: 2.5rem;
         font-weight: 300;
         text-transform: uppercase;
-        color: $color-grey-light;
+        color: $color-white;
         position: absolute;
         top: 16rem;
         left: 2rem;
@@ -106,21 +104,21 @@
         box-decoration-break: clone;
             
         &--1 {
-            background-image: linear-gradient(to right bottom,
-            rgba(255, 195, 82, .85),
-            rgba(255, 250, 205, .85));
+            background-image: linear-gradient(to bottom,
+            $color-wood,
+            $color-beige);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom,
-            rgba(253, 110, 110, .85),
-            rgba(255, 194, 204, .85));
+            background-image: linear-gradient(to bottom,
+            $color-wood,
+            $color-beige);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom,
-            rgba(248, 136, 248, .85),
-            rgba(173, 216, 230, .85));
+            background-image: linear-gradient(to bottom,
+            $color-wood,
+            $color-beige);
         }
     }
 

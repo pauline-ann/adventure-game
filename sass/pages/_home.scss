@@ -19,7 +19,7 @@
     }
 }
 
-.section-updates {
+.section-press {
     background-color: $color-grey-light;
     padding: 18rem 0 6rem 0;
 }
@@ -31,9 +31,9 @@
 
 .section-preorder {
     padding: 15rem 0;
-    background-image: linear-gradient(to bottom,
-    rgb(247, 181, 247),
-    rgb(189, 225, 236));
+    background-image: linear-gradient(to top left,
+    $color-grey-light,
+    $color-beige);
 }
 
 .preorder {

@@ -69,7 +69,7 @@
     &__radio-button {
         height: 3rem;
         width: 3rem;
-        border: .4rem solid $color-primary;
+        border: .4rem solid $color-brown-light;
         border-radius: 50%;
         display: inline-block;
         position: absolute;
@@ -82,7 +82,7 @@
             height: 1.3rem;
             width: 1.3rem;
             border-radius: 50%;
-            background-color: $color-primary;
+            background-color: $color-brown-light;
             opacity: 0;
             transition: opacity .2s;
 

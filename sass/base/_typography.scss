@@ -3,7 +3,7 @@ body {
     font-size: $default-font-size;
     font-weight: 300;
     line-height: 1.5;
-    color: $color-grey-dark;
+    color: $color-brown-dark;
 }
 
 .heading-primary {
@@ -55,7 +55,7 @@ body {
     font-family: 'LOZ-font', sans-serif;
     letter-spacing: .7rem !important;
     display: inline-block;
-    background-image: linear-gradient(to right, lighten($color-secondary, 15%),darken($color-secondary, 20%));
+    background-image: linear-gradient(to right, darken($color-olivegreen, .8), darken($color-beige, 1));
     background-clip: text;;
     -webkit-background-clip: text;
     color: transparent;

@@ -23,6 +23,24 @@
 
 <body>
 
+    <div class="nav">
+        <input type="checkbox" class="nav__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="nav__button" id="lottie">
+            <i class="nav__icon nav__icon--open material-icons">menu</i>
+            <i class="nav__icon nav__icon--close material-icons">close</i>
+        </label>
+        <div class="nav__background">&nbsp;</div>
+        <nav class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Press</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Reviews</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Pre-order</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <div class="header__logo-box">
             <img src="img/temp-logo.png" alt="LOM logo" class="header__logo">
@@ -125,7 +143,7 @@
         <section class="section-updates">
             <div class="u-center-text u-mb-6">
                 <h2 class="heading-secondary">
-                    DLC Updates
+                    Press
                 </h2>
             </div>
             <div class="row">
@@ -247,7 +265,7 @@
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/mountain-video.mp4" type="video/mp4">
-                        Your browser is not supported.
+                    Your browser is not supported.
                 </video>
             </div>
             <div class="u-center-text u-mb-6">
@@ -268,7 +286,10 @@
                             Best game ever.
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi incidunt adipisci fugit modi repellat facere sit dolore perferendis totam voluptatibus doloribus nostrum saepe voluptatum est numquam, nihil minima id. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit sequi incidunt adipisci fugit modi repellat facere sit dolore perferendis totam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi incidunt adipisci fugit
+                            modi repellat facere sit dolore perferendis totam voluptatibus doloribus nostrum saepe
+                            voluptatum est numquam, nihil minima id. Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Velit sequi incidunt adipisci fugit modi repellat facere sit dolore perferendis totam.
                         </p>
                     </div>
                 </div>
@@ -284,7 +305,10 @@
                             Everyone needs to play this game!!
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi incidunt adipisci fugit modi repellat facere sit dolore perferendis totam voluptatibus doloribus nostrum saepe voluptatum est numquam, nihil minima id. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit sequi incidunt adipisci fugit modi repellat facere sit dolore perferendis totam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sequi incidunt adipisci fugit
+                            modi repellat facere sit dolore perferendis totam voluptatibus doloribus nostrum saepe
+                            voluptatum est numquam, nihil minima id. Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Velit sequi incidunt adipisci fugit modi repellat facere sit dolore perferendis totam.
                         </p>
                     </div>
                 </div>
@@ -313,7 +337,7 @@
                             </div>
                             <div class="form__group u-mb-3">
                                 <div class="form__radio-group">
-                                    <input type="radio" class="form__radio-input" id="yes" name="signup">
+                                    <input type="radio" class="form__radio-input" id="yes" name="signup" checked>
                                     <label for="yes" class="form__radio-label">
                                         <span class="form__radio-button"></span>
                                         Yes! Sign me up for exclusive email updates.
@@ -338,6 +362,38 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/temp-logo.png" alt="LOM logo" class="footer__logo">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Developers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Initial design from Udemy course by <a href="https://www.udemy.com/course/advanced-css-and-sass/"
+                        class="footer__link" target="_blank">Jonas Schmedtmann</a>.<br />Website built and design
+                    modified by <a href="http://paulineann.me" class="footer__link" target="_blank">Pauline Bantayan</a>
+                    in 2020.<br />
+                    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+                        class="footer__link" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/"
+                        title="Flaticon" class="footer__link" target="_blank">www.flaticon.com</a><br />
+                    <a class="footer__link" target="_blank" href="/icons/set/sword">Sword icon</a> and <a
+                        class="footer__link" target="_blank" href="/icons/set/archers-bow">Archers Bow icon</a> by <a
+                        class="footer__link" target="_blank" href="https://icons8.com">Icons8</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 
     <!-- <section class="grid-test">
         <div class="row">
@@ -401,10 +457,6 @@
             </div>
         </div>
     </section> -->
-
-    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    <a target="_blank" href="/icons/set/sword">Sword icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-    <a target="_blank" href="/icons/set/archers-bow">Archers Bow icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
 </body>
 
 </html>

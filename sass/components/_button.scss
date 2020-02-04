@@ -57,15 +57,6 @@
         color: $color-brown-dark;
     }
 
-    &--green {
-        background-color: $color-olivegreen;
-        color: $color-white;
-
-        &:hover {
-            box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
-        }
-    }
-
     &--brown {
         background-color: $color-brown-light;
         color: $color-white;

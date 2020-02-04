@@ -16,27 +16,6 @@
         left: 5rem;
     }
 
-    &__logo {
-        height: 5rem;
-        font-family: 'LOZ-font', sans-serif;
-        color: $color-white;
-        text-decoration: none;
-        position: relative;
-
-        &--triforce {
-            font-size: 9rem;
-        }
-
-        &--LOM {
-            font-size: 2rem;
-            letter-spacing: 1rem;
-            position: absolute;
-            top: 7rem;
-            left: 50%;
-            transform: translateX(-43%);
-        }
-    }
-
     &__text-box {
         @include center-element;
         text-align: center;

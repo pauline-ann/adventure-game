@@ -55,7 +55,9 @@ body {
     font-family: 'LOZ-font', sans-serif;
     letter-spacing: .7rem !important;
     display: inline-block;
-    background-image: linear-gradient(to right, darken($color-olivegreen, .8), darken($color-beige, 1));
+    background-image: linear-gradient(to right, $color-brown-light, $color-olivegreen);
+
+    //background-image: linear-gradient(to right, darken($color-olivegreen, .8), darken($color-beige, 1));
     background-clip: text;;
     -webkit-background-clip: text;
     color: transparent;

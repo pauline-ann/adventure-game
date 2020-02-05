@@ -28,10 +28,12 @@
 
         &--open {
             opacity: 1;
+            visibility: visible;
         }
 
         &--close {
             opacity: 0;
+            visibility: hidden;
         }
     }
 
@@ -107,9 +109,11 @@
 
     &__checkbox:checked ~ &__button > &__icon--open {
         opacity: 0;
+        visibility: hidden;
     }
 
     &__checkbox:checked ~ &__button > &__icon--close {
         opacity: 1;
+        visibility: visible;
     }
 }

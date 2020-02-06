@@ -6,7 +6,8 @@
 // MAIN PALETTE
 $color-wood: #C1B69B;
 $color-beige: #F0E6CD;
-$color-forestyellow: rgb(210, 188, 131);
+$color-forestyellow-light: rgb(210, 188, 131);
+$color-forestyellow-dark: rgb(146, 131, 94);
 $color-olivegreen: rgb(121, 108, 81);
 
 // FORM VALIDATION
@@ -28,6 +29,7 @@ $color-black: rgb(22, 22, 22);
 
 // FONT
 $default-font-size: 1.6rem;
+$default-font-color: $color-brown-dark;
 
 // GRID
 $grid-width: 114rem;

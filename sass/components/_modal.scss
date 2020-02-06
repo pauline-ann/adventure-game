@@ -10,6 +10,7 @@
     visibility: hidden;
     
     &__content {
+        @include center-element;
         width: 75%;
         padding: 2rem;
         background-color: $color-white;
@@ -17,10 +18,8 @@
         border-radius: 1rem;
         display: table;
         opacity: 0;
-        transform: translate(-50%, -50%) scale(.5);
-        transition: all .4s .2s;
-
-        @include center-element;
+        transform: translate(-50%, -50%) scale(.25);
+        transition: all .4s 1s;
     }
 
     &__image-section {

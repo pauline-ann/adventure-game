@@ -13,6 +13,10 @@ body {
     backface-visibility: hidden;
     margin-bottom: 4rem;
 
+    @include respond(phone) {
+        line-height: .8;
+    }
+
     &--legend {
         display: block;
         font-size: 2.5rem;
@@ -20,6 +24,11 @@ body {
         letter-spacing: 2.8rem;
         text-align: right;
         animation: moveInRight 2s ease-out;
+
+        @include respond(phone) {
+            font-size: 2.03rem;
+            letter-spacing: 2.1rem;
+        }
     }
     
     &--marceline {
@@ -31,10 +40,20 @@ body {
 
         &--big {
             font-size: 14rem;
+
+            @include respond(phone) {
+                font-size: 10.5rem;
+                letter-spacing: .75rem;
+            }
         }
         
         &--small {
             font-size: 10rem;
+
+            @include respond(phone) {
+                font-size: 7.5rem;
+                letter-spacing: .75rem;
+            }
         }
     }
         
@@ -45,6 +64,11 @@ body {
         letter-spacing: .8rem;
         text-align: right;
         animation: moveInRight 2s ease-out;
+
+        @include respond(phone) {
+            font-size: 2.25rem;
+            letter-spacing: .6rem;
+        }
     }
 }
 
@@ -54,10 +78,17 @@ body {
     font-weight: 700;
     font-family: 'LOZ-font', sans-serif;
     letter-spacing: .7rem !important;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
     display: inline-block;
     background-image: linear-gradient(to right, $color-brown-light, $color-olivegreen);
-
-    //background-image: linear-gradient(to right, darken($color-olivegreen, .8), darken($color-beige, 1));
     background-clip: text;;
     -webkit-background-clip: text;
     color: transparent;

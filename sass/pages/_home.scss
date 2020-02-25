@@ -1,11 +1,19 @@
 .section-about {
     background-color: $color-grey-light;
-    padding: 20rem 0;
+    padding: 18rem 0;
     margin-top: -10vh;
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 14rem 0 12rem 0;
+    }
 }
 
 .section-features {
-    padding: 20rem 0;
+    padding: 16rem 0;
     background-image: linear-gradient(to right bottom,
     rgba(238, 238, 238, .2),
     rgba(126, 126, 126, .2)),
@@ -14,6 +22,14 @@
     transform: skewY(-4deg);
     margin-top: -5.5rem;
 
+    @include respond(tab-port) {
+        padding: 14rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 10rem 0;
+    }
+
     & > * {
         transform: skewY(4deg);
     }
@@ -21,12 +37,28 @@
 
 .section-dlc {
     background-color: $color-grey-light;
-    padding: 18rem 0 6rem 0;
+    padding: 15rem 0 14rem 0;
+
+    @include respond(tab-port) {
+        padding: 12rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 9rem 0;
+    }
 }
 
 .section-reviews {
     position: relative;
-    padding: 15rem 0;
+    padding: 14rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 8rem 0;
+    }
 }
 
 .section-preorder {
@@ -34,6 +66,14 @@
     background-image: linear-gradient(to top left,
     $color-wood,
     $color-beige);
+
+    @include respond(tab-port) {
+        padding: 9rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 7rem 0;
+    }
 }
 
 .preorder {
@@ -45,11 +85,23 @@
     background-size: 100%;
     border-radius: .5rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
-
     height: fit-content;
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(100deg,
+        rgba($color-white, .8) 0%,
+        rgba($color-white, .8) 70%,
+        transparent 70%),
+        url(../img/LOM-temp-3.jpg);  
+    }
 
     &__form {
         width: 50%;
         padding: 5rem 6rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+            padding: 3rem 5rem;   
+        }
     }
 }

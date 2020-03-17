@@ -25,18 +25,18 @@
 
     <div class="nav">
         <input type="checkbox" class="nav__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="nav__button" id="lottie">
+        <label for="navi-toggle" class="nav__button">
             <i class="nav__icon nav__icon--open material-icons">menu</i>
             <i class="nav__icon nav__icon--close material-icons">close</i>
         </label>
         <div class="nav__background">&nbsp;</div>
         <nav class="nav__menu">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Expansion Packs</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Reviews</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Membership</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link" onclick="closeNav()">About</a></li>
+                <li class="nav__item"><a href="#features" class="nav__link" onclick="closeNav()">Features</a></li>
+                <li class="nav__item"><a href="#expansion-packs" class="nav__link" onclick="closeNav()">Expansion Packs</a></li>
+                <li class="nav__item"><a href="#reviews" class="nav__link" onclick="closeNav()">Reviews</a></li>
+                <li class="nav__item"><a href="#membership" class="nav__link" onclick="closeNav()">Membership</a></li>
             </ul>
         </nav>
     </div>
@@ -67,7 +67,7 @@
 
     <main>
 
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="u-center-align u-mb-6">
                 <h2 class="heading-secondary">
                     Hey! Listen!
@@ -102,7 +102,7 @@
             </div>
         </section>
 
-        <section class="section-features">
+        <section class="section-features" id="features">
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="feature-box">
@@ -139,7 +139,7 @@
             </div>
         </section>
 
-        <section class="section-dlc">
+        <section class="section-dlc" id="expansion-packs">
             <div class="u-center-align u-mb-6" id="section-dlc">
                 <h2 class="heading-secondary">
                     Expansion Packs
@@ -256,11 +256,11 @@
                 </div>
             </div>
             <div class="u-center-align">
-                <a href="#" class="btn btn--brown">See more&rarr;</a>
+                <a href="#modal" class="btn btn--brown">See more&rarr;</a>
             </div>
         </section>
 
-        <section class="section-reviews">
+        <section class="section-reviews" id="reviews">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/mountain-video.mp4" type="video/mp4">
@@ -316,7 +316,8 @@
                 </div>
             </div>
         </section>
-        <section class="section-signup">
+
+        <section class="section-signup" id="membership">
             <div class="row">
                 <div class="signup">
                     <div class="signup__form">
@@ -382,13 +383,12 @@
             </div>
             <div class="col-1-of-2">
                 <p class="footer__copyright">
-                    Initial design from Udemy course by <a href="https://www.udemy.com/course/advanced-css-and-sass/"
-                        class="footer__link" target="_blank">Jonas Schmedtmann</a>.<br />Website built and design
-                    modified by <a href="http://paulineann.me" class="footer__link" target="_blank">Pauline Bantayan</a>
-                    in 2020.<br />
+                    Website architected and design modified by <a href="http://paulineann.me" class="footer__link" target="_blank">Pauline Bantayan</a> in 2020.<br />
+                    Initial design inspiration from Udemy course by <a href="https://www.udemy.com/course/advanced-css-and-sass/"
+                        class="footer__link" target="_blank">Jonas Schmedtmann</a>.<br />
                     Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
                         class="footer__link" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/"
-                        title="Flaticon" class="footer__link" target="_blank">www.flaticon.com</a><br />
+                        title="Flaticon" class="footer__link" target="_blank">Flaticon</a><br />
                     <a class="footer__link" target="_blank" href="/icons/set/sword">Sword icon</a> and <a
                         class="footer__link" target="_blank" href="/icons/set/archers-bow">Archers Bow icon</a> by <a
                         class="footer__link" target="_blank" href="https://icons8.com">Icons8</a><br />
@@ -492,5 +492,8 @@
         </div>
     </section> -->
 </body>
+
+<!-- EXTERNAL JAVACRIPT -->
+<script src="js/logic.js"></script>
 
 </html>

@@ -8,6 +8,7 @@
         position: absolute;
         z-index: 10;
         transition: all .2s;
+        filter: saturate(.8) contrast(.8);
 
         @include respond(tab-port) {
             float: left;

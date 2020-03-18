@@ -25,7 +25,7 @@
 
     <div class="nav">
         <input type="checkbox" class="nav__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="nav__button">
+        <label for="navi-toggle" class="nav__button" id="nav-button">
             <i class="nav__icon nav__icon--open material-icons">menu</i>
             <i class="nav__icon nav__icon--close material-icons">close</i>
         </label>
@@ -406,12 +406,22 @@
 
     <div class="modal" id="modal">
         <div class="modal__content">
-            <a href="#section-dlc" class="modal__close-btn">
+            <a href="#nav-button" class="modal__close-btn">
                 <i class="modal__close-btn--icon material-icons">close</i>
             </a>
             <div class="modal__image-section">
-                <img src="img/modal-img/person-holding-white-snes-controller.jpg" alt="Press photo 1" class="modal__img">
-                <img src="img/modal-img/photo-of-person-typing-on-computer-keyboard.jpg" alt="Press photo 2" class="modal__img">
+                <img 
+                    srcset="img/modal-img/person-holding-white-snes-controller-1x.jpg 320w, img/modal-img/person-holding-white-snes-controller-2x.jpg 640w" 
+                    sizes="(max-width: 900px) 38vw, (max-width: 600px) 36vw, 320px" 
+                    alt="Press photo 1" 
+                    class="modal__img"
+                    src="img/modal-img/person-holding-white-snes-controller-2x.jpg">
+                <img 
+                    srcset="img/modal-img/photo-of-person-typing-on-computer-keyboard-1x.jpg 320w, img/modal-img/photo-of-person-typing-on-computer-keyboard-2x.jpg 640w"
+                    sizes="(max-width: 900px) 38vw, (max-width: 600px) 36vw, 320px"
+                    alt="Press photo 2" 
+                    class="modal__img"
+                    src="img/modal-img/photo-of-person-typing-on-computer-keyboard.jpg">
             </div>
             <div class="modal__text-section">
                 <h2 class="heading-secondary u-mb-1">Expansion Pack Download

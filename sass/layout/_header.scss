@@ -4,11 +4,19 @@
     background-image: linear-gradient(to right bottom,
     rgba(238, 238, 238, .2),
     rgba(126, 126, 126, .2)),
-    url(../img/LOM-temp-1.jpg);
+    url(../img/LOM-header-small.jpg);
     background-size: cover;
     background-position: top;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+    // Media query for using the larger image for higher resolution wider than 600px, OR very large screens
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        background-image: linear-gradient(to right bottom,
+        rgba(238, 238, 238, .2),
+        rgba(126, 126, 126, .2)),
+        url(../img/LOM-header.jpg);
+    }
 
     @include respond(phone) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);

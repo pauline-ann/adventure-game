@@ -70,21 +70,45 @@
             background-image: linear-gradient(to bottom,
             $color-brown-dark,
             $color-beige),
-            url(../img/LOM-temp-3.jpg);
+            url(../img/expansion-packs/triforce-small.jpg);
+
+            // Media query for using the larger image for higher resolution wider than 600px, OR very large screens
+            @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+                background-image: linear-gradient(to bottom,
+                $color-brown-dark,
+                $color-beige),
+                url(../img/expansion-packs/triforce.jpg);
+            }
         }
 
         &--2 {
             background-image: linear-gradient(to bottom,
             $color-brown-dark,
             $color-beige),
-            url(../img/LOM-temp-3.jpg);
+            url(../img/expansion-packs/mastersword-small.jpg);
+
+            // Media query for using the larger image for higher resolution wider than 600px, OR very large screens
+            @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+                background-image: linear-gradient(to bottom,
+                $color-brown-dark,
+                $color-beige),
+                url(../img/expansion-packs/mastersword.jpg);
+            }
         }
 
         &--3 {
             background-image: linear-gradient(to bottom,
             $color-brown-dark,
             $color-beige),
-            url(../img/LOM-temp-3.jpg);
+            url(../img/expansion-packs/fairyfountain-small.jpg);
+
+            // Media query for using the larger image for higher resolution wider than 600px, OR very large screens
+            @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+                background-image: linear-gradient(to bottom,
+                $color-brown-dark,
+                $color-beige),
+                url(../img/expansion-packs/fairyfountain.jpg);
+            }
         }
     }
 

@@ -25,27 +25,26 @@
 
     <div class="nav">
         <input type="checkbox" class="nav__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="nav__button" id="lottie">
+        <label for="navi-toggle" class="nav__button" id="nav-button">
             <i class="nav__icon nav__icon--open material-icons">menu</i>
             <i class="nav__icon nav__icon--close material-icons">close</i>
         </label>
         <div class="nav__background">&nbsp;</div>
         <nav class="nav__menu">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Press</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Reviews</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Pre-order</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link" onclick="closeNav()">About</a></li>
+                <li class="nav__item"><a href="#features" class="nav__link" onclick="closeNav()">Features</a></li>
+                <li class="nav__item"><a href="#expansion-packs" class="nav__link" onclick="closeNav()">Expansion Packs</a></li>
+                <li class="nav__item"><a href="#reviews" class="nav__link" onclick="closeNav()">Reviews</a></li>
+                <li class="nav__item"><a href="#membership" class="nav__link" onclick="closeNav()">Membership</a></li>
             </ul>
         </nav>
     </div>
 
     <header class="header">
         <div class="header__logo-box">
-            <img src="img/temp-logo.png" alt="LOM logo" class="header__logo">
+            <a href="/" class="logo"><span class="logo--triforce">*</span><span class="logo--LOM">LOM</span></a>
         </div>
-
         <div class="header__text-box">
             <h1 class="heading-primary">
                 <span class="heading-primary--legend">The Legend of</span>
@@ -55,18 +54,21 @@
                 </span>
                 <span class="heading-primary--breath">Breath of the Pug</span>
             </h1>
-
-            <a href="#" class="btn"><img src="img/sword.png" alt="sword button"
-                    class="btn-icon btn--animated--fastest"></a>
-            <a href="#" class="btn"><img src="img/shield.png" alt="shield button"
-                    class="btn-icon btn--animated--faster"></a>
-            <a href="#" class="btn"><img src="img/bow.png" alt="bow button" class="btn-icon btn--animated--fast"></a>
+            <div class="header__icon-box">
+                <a href="#" class="btn"><img src="img/icon-btn/sword.png" alt="sword button"
+                        class="btn-icon btn--animated--fastest"></a>
+                <a href="#" class="btn"><img src="img/icon-btn/shield.png" alt="shield button"
+                        class="btn-icon btn--animated--faster"></a>
+                <a href="#" class="btn"><img src="img/icon-btn/bow.png" alt="bow button"
+                        class="btn-icon btn--animated--fast"></a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="section-about">
-            <div class="u-center-text u-mb-6">
+
+        <section class="section-about" id="about">
+            <div class="u-center-align u-mb-6">
                 <h2 class="heading-secondary">
                     Hey! Listen!
                 </h2>
@@ -88,22 +90,19 @@
                         The flow of time is always cruel; its speed seems different for each person, but no one can
                         change it. A thing that does not change with time is a memory of younger days.
                     </p>
-
-                    <a href="#" class="btn-text">
-                        Learn more&rarr;
-                    </a>
+                    <a href="#" class="btn-text">Learn more&rarr;</a>
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/LOM-temp-2.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                        <img src="img/LOM-temp-2.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/LOM-temp-2.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        <img srcset="img/composition-img/snow-mountain-under-gray-cloudy-sky-1x.jpg 1x, img/composition-img/snow-mountain-under-gray-cloudy-sky-2x.jpg 2x" alt="Photo 1" class="composition__photo composition__photo--p1">
+                        <img srcset="img/composition-img/colchuck-lake-washington-1x.jpg 1x, img/composition-img/colchuck-lake-washington-2x.jpg 2x" alt="Photo 2" class="composition__photo composition__photo--p2">
+                        <img srcset="img/composition-img/person-on-a-bridge-near-a-lake-1x.jpg 1x, img/composition-img/person-on-a-bridge-near-a-lake-2x.jpg 2x" alt="Photo 3" class="composition__photo composition__photo--p3">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-features">
+        <section class="section-features" id="features">
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="feature-box">
@@ -140,10 +139,10 @@
             </div>
         </section>
 
-        <section class="section-updates">
-            <div class="u-center-text u-mb-6">
+        <section class="section-dlc" id="expansion-packs">
+            <div class="u-center-align u-mb-6" id="section-dlc">
                 <h2 class="heading-secondary">
-                    Press
+                    Expansion Packs
                 </h2>
             </div>
             <div class="row">
@@ -178,7 +177,7 @@
                                         02/20/2020
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn--white">Pre-order now!</a>
+                                <a href="#modal" class="btn btn--white">Download</a>
                             </div>
                         </div>
                     </div>
@@ -214,7 +213,7 @@
                                         03/14/2020
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn--white">Pre-order now!</a>
+                                <a href="#modal" class="btn btn--white">Download</a>
                             </div>
                         </div>
                     </div>
@@ -250,33 +249,33 @@
                                         10/01/2020
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn--white">Pre-order now!</a>
+                                <a href="#modal" class="btn btn--white">Download</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="u-center-text u-mb-9">
-                <a href="#" class="btn btn--brown">See all updates&rarr;</a>
+            <div class="u-center-align">
+                <a href="#modal" class="btn btn--brown">See more&rarr;</a>
             </div>
         </section>
 
-        <section class="section-reviews">
+        <section class="section-reviews" id="reviews">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/mountain-video.mp4" type="video/mp4">
                     Your browser is not supported.
                 </video>
             </div>
-            <div class="u-center-text u-mb-6">
+            <div class="u-center-align u-mb-6">
                 <h2 class="heading-secondary">
-                    Fan reviews
+                    Reviews
                 </h2>
             </div>
             <div class="row">
                 <div class="review">
                     <figure class="review__shape">
-                        <img src="img/LOM-temp-1.jpg" alt="Fan photo" class="review__img">
+                        <img src="img/review-avatars/review-1.png" alt="Fan photo" class="review__img">
                         <figcaption class="review__caption">
                             Kevin M.
                         </figcaption>
@@ -295,7 +294,7 @@
                 </div>
                 <div class="review">
                     <figure class="review__shape">
-                        <img src="img/LOM-temp-2.jpg" alt="Fan photo" class="review__img">
+                        <img src="img/review-avatars/review-2.png" alt="Fan photo" class="review__img">
                         <figcaption class="review__caption">
                             Pauline B.
                         </figcaption>
@@ -312,20 +311,24 @@
                         </p>
                     </div>
                 </div>
-                <div class="u-center-text u-mt-10">
+                <div class="u-center-align u-mt-10">
                     <a href="#" class="btn-text">See all reviews&rarr;</a>
                 </div>
             </div>
         </section>
-        <section class="section-preorder">
+
+        <section class="section-signup" id="membership">
             <div class="row">
-                <div class="preorder">
-                    <div class="preorder__form">
+                <div class="signup">
+                    <div class="signup__form">
                         <form action="#" class="form">
-                            <div class="u-center-text u-mb-4">
-                                <h2 class="heading-secondary">
-                                    Pre-order
+                            <div class="u-center-align u-mb-3">
+                                <h2 class="heading-secondary u-mb-1">
+                                    Want to learn more?
                                 </h2>
+                                <h3 class="heading-tertiary">
+                                    Join our mailing list for exclusive offers
+                                </h3>
                             </div>
                             <div class="form__group">
                                 <input type="text" class="form__input" placeholder="Full name" id="name" required>
@@ -353,7 +356,7 @@
                             </div>
                             <div class="form__group">
                                 <button class="btn btn--brown">
-                                    Pre-order&rarr;
+                                    Submit
                                 </button>
                             </div>
                         </form>
@@ -365,7 +368,7 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="img/temp-logo.png" alt="LOM logo" class="footer__logo">
+            <a href="/" class="logo"><span class="logo--triforce">*</span><span class="logo--LOM">LOM</span></a>
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -380,20 +383,62 @@
             </div>
             <div class="col-1-of-2">
                 <p class="footer__copyright">
-                    Initial design from Udemy course by <a href="https://www.udemy.com/course/advanced-css-and-sass/"
-                        class="footer__link" target="_blank">Jonas Schmedtmann</a>.<br />Website built and design
-                    modified by <a href="http://paulineann.me" class="footer__link" target="_blank">Pauline Bantayan</a>
-                    in 2020.<br />
+                    Website architected and design modified by <a href="http://paulineann.me" class="footer__link" target="_blank">Pauline Bantayan</a> in 2020.<br />
+                    Initial design inspiration from Udemy course by <a href="https://www.udemy.com/course/advanced-css-and-sass/"
+                        class="footer__link" target="_blank">Jonas Schmedtmann</a>.<br />
                     Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
                         class="footer__link" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/"
-                        title="Flaticon" class="footer__link" target="_blank">www.flaticon.com</a><br />
+                        title="Flaticon" class="footer__link" target="_blank">Flaticon</a><br />
                     <a class="footer__link" target="_blank" href="/icons/set/sword">Sword icon</a> and <a
                         class="footer__link" target="_blank" href="/icons/set/archers-bow">Archers Bow icon</a> by <a
-                        class="footer__link" target="_blank" href="https://icons8.com">Icons8</a>
+                        class="footer__link" target="_blank" href="https://icons8.com">Icons8</a><br />
+                    Photos by 
+                    <a href="https://www.pexels.com/@simonmigaj?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" class="footer__link" target="_blank">Simon Migaj</a>, 
+                    <a href="https://www.pexels.com/@atomlaborblog?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" class="footer__link" target="_blank">Jens Mahnke</a>, 
+                    <a href="https://www.pexels.com/@soumil-kumar-4325?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" class="footer__link" target="_blank">Soumil Kumar</a>, 
+                    <a href="https://www.pexels.com/@an-hoang-1770312?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels " class="footer__link" target="_blank">An Hoàng</a>, 
+                    <a href="https://www.pexels.com/@charles-dominic-dass-370929" class="footer__link" target="_blank">Charles Dominic Dass</a>, and 
+                    <a href="https://www.pexels.com/@sergei-akulich-1322276?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" class="footer__link" target="_blank">Sergei Akulich</a> from 
+                    <a href="https://www.pexels.com/photo/person-on-a-bridge-near-a-lake-747964/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" class="footer__link" target="_blank">Pexels</a>, Pamela Santos, and Pauline Bantayan
                 </p>
             </div>
         </div>
     </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <a href="#nav-button" class="modal__close-btn">
+                <i class="modal__close-btn--icon material-icons">close</i>
+            </a>
+            <div class="modal__image-section">
+                <img 
+                    srcset="img/modal-img/person-holding-white-snes-controller-1x.jpg 320w, img/modal-img/person-holding-white-snes-controller-2x.jpg 640w" 
+                    sizes="(max-width: 56.25em) 38vw, (max-width: 37.5em) 36vw, 320px" 
+                    alt="Press photo 1" 
+                    class="modal__img"
+                    src="img/modal-img/person-holding-white-snes-controller-2x.jpg">
+                <img 
+                    srcset="img/modal-img/photo-of-person-typing-on-computer-keyboard-1x.jpg 320w, img/modal-img/photo-of-person-typing-on-computer-keyboard-2x.jpg 640w"
+                    sizes="(max-width: 56.25em) 38vw, (max-width: 37.5em) 36vw, 320px"
+                    alt="Press photo 2" 
+                    class="modal__img"
+                    src="img/modal-img/photo-of-person-typing-on-computer-keyboard.jpg">
+            </div>
+            <div class="modal__text-section">
+                <h2 class="heading-secondary u-mb-1">Expansion Pack Download
+                </h2>
+                <h3 class="heading-tertiary u-mb-2">Terms and Conditions</h3>
+                <p class="modal__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi aliquid nobis est accusantium ipsum
+                    eligendi voluptates nostrum laudantium expedita molestiae! Sunt illo repudiandae asperiores
+                    accusamus atque amet nemo itaque non. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Molestias earum quasi impedit, fuga harum et error exercitationem quam non rerum ut quibusdam esse
+                    velit magnam deleniti est cupiditate, nihil laborum?
+                </p>
+                <a href="#" class="btn btn--brown">Accept</a>
+            </div>
+        </div>
+    </div>
 
     <!-- <section class="grid-test">
         <div class="row">
@@ -458,5 +503,8 @@
         </div>
     </section> -->
 </body>
+
+<!-- EXTERNAL JAVACRIPT -->
+<script src="js/logic.js"></script>
 
 </html>

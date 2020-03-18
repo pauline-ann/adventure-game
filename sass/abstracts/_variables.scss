@@ -1,23 +1,38 @@
 // COLORS 
-$color-primary: rgb(134, 105, 90);
-$color-secondary: #D7A480;
-$color-tertiary: rgb(132, 170, 196);
 
-$color-text-primary: #726154;
+// Tan
+// #CC9C76
 
+// MAIN PALETTE
+$color-wood: #C1B69B;
+$color-beige: #F0E6CD;
+$color-forestyellow-light: rgb(210, 188, 131);
+$color-forestyellow-dark: rgb(146, 131, 94);
+$color-olivegreen: rgb(121, 108, 81);
+
+// FORM VALIDATION
+$color-red: #c92b2b;
+$color-green: #40c526;
+
+// GRAYS
+$color-slategray: #514A4E;
 $color-grey-dark: #777;
 $color-grey-light: #f7f7f7;
 
-$color-red: #c92b2b;
-$color-green: #2dcf71;
+// BROWNS
+$color-brown-dark: rgb(75, 61, 59);
+$color-brown-light: #AE987B;
 
+// OTHER COLORS
 $color-white: #fff;
-$color-black: rgb(20, 20, 20);
+$color-black: rgb(22, 22, 22);
 
 // FONT
 $default-font-size: 1.6rem;
+$default-font-color: $color-brown-dark;
 
 // GRID
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
+$gutter-vertical-small: 5rem;
 $gutter-horizontal: 6rem;

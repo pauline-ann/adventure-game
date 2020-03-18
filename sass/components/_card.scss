@@ -1,10 +1,11 @@
 .card {
 
-    // FUNCTIONALITY
+    ///// FUNCTIONALITY /////
     perspective:100rem;
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
+    border-radius: 0;
 
     &__side {
         height: 50rem;
@@ -21,9 +22,7 @@
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
-            background-image: linear-gradient(to bottom,
-            $color-white,
-            $color-grey-light);
+            background-color: $color-white;
         }
 
         &--back {
@@ -31,20 +30,20 @@
 
             &--1 {
                 background-image: linear-gradient(to bottom,
-                rgb(255, 195, 82),
-                rgb(255, 250, 205));
+                $color-wood,
+                $color-beige);
             }
 
             &--2 {
                 background-image: linear-gradient(to bottom,
-                rgb(253, 110, 110),
-                rgb(255, 192, 203));
+                $color-wood,
+                $color-beige);
             }
 
             &--3 {
                 background-image: linear-gradient(to bottom,
-                rgb(248, 136, 248),
-                rgb(173, 216, 230));
+                $color-wood,
+                $color-beige);
             }
         }
     }
@@ -57,7 +56,7 @@
         transform: rotateY(0);
     }
 
-    // FRONT SIDE STYLING
+    ///// FRONT SIDE STYLING /////
     &__picture {
         background-size: cover;
         height: 22rem;
@@ -69,23 +68,47 @@
 
         &--1 {
             background-image: linear-gradient(to bottom,
-            rgb(255, 195, 82),
-            rgb(255, 250, 205)),
-            url(../img/LOM-temp-3.jpg);
+            $color-brown-dark,
+            $color-beige),
+            url(../img/expansion-packs/triforce-small.jpg);
+
+            // Media query for using the larger image for higher resolution wider than 600px, OR very large screens
+            @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+                background-image: linear-gradient(to bottom,
+                $color-brown-dark,
+                $color-beige),
+                url(../img/expansion-packs/triforce.jpg);
+            }
         }
 
         &--2 {
             background-image: linear-gradient(to bottom,
-            rgb(253, 110, 110),
-            rgb(255, 192, 203)),
-            url(../img/LOM-temp-3.jpg);
+            $color-brown-dark,
+            $color-beige),
+            url(../img/expansion-packs/mastersword-small.jpg);
+
+            // Media query for using the larger image for higher resolution wider than 600px, OR very large screens
+            @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+                background-image: linear-gradient(to bottom,
+                $color-brown-dark,
+                $color-beige),
+                url(../img/expansion-packs/mastersword.jpg);
+            }
         }
 
         &--3 {
             background-image: linear-gradient(to bottom,
-            rgb(248, 136, 248),
-            rgb(173, 216, 230)),
-            url(../img/LOM-temp-3.jpg);
+            $color-brown-dark,
+            $color-beige),
+            url(../img/expansion-packs/fairyfountain-small.jpg);
+
+            // Media query for using the larger image for higher resolution wider than 600px, OR very large screens
+            @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+                background-image: linear-gradient(to bottom,
+                $color-brown-dark,
+                $color-beige),
+                url(../img/expansion-packs/fairyfountain.jpg);
+            }
         }
     }
 
@@ -93,7 +116,7 @@
         font-size: 2.5rem;
         font-weight: 300;
         text-transform: uppercase;
-        color: $color-grey-light;
+        color: $color-white;
         position: absolute;
         top: 16rem;
         left: 2rem;
@@ -106,21 +129,21 @@
         box-decoration-break: clone;
             
         &--1 {
-            background-image: linear-gradient(to right bottom,
-            rgba(255, 195, 82, .85),
-            rgba(255, 250, 205, .85));
+            background-image: linear-gradient(to bottom,
+            $color-wood,
+            $color-beige);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom,
-            rgba(253, 110, 110, .85),
-            rgba(255, 194, 204, .85));
+            background-image: linear-gradient(to bottom,
+            $color-wood,
+            $color-beige);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom,
-            rgba(248, 136, 248, .85),
-            rgba(173, 216, 230, .85));
+            background-image: linear-gradient(to bottom,
+            $color-wood,
+            $color-beige);
         }
     }
 
@@ -145,7 +168,7 @@
         }
     }
 
-    // BACK SIDE STYLING
+    ///// BACK SIDE STYLING /////
     &__cta {
         
         @include center-element;
@@ -166,5 +189,54 @@
             font-size: 5.5rem;
             font-weight: 100;
         }
+    }
+
+    ///// RESPONSIVENESS /////
+    @include respond(tab-port) {
+
+        // .card
+        height: auto;
+        border-radius: 1rem !important;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        overflow: hidden;
+        
+        &__side {
+            height: auto;
+            position: relative;
+            box-shadow: none;
+            border-radius: 0;
+    
+            &--back {
+                transform: rotateY(0);
+                clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+            }
+        }
+    
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+
+        &__details {
+            padding: 1rem 3rem ;
+        }
+    
+        ///// BACK SIDE STYLING /////
+        &__cta {
+            width: 100%;
+            position: relative;
+            top: 0%;
+            left: 0;
+            transform: translate(0);
+            padding: 5rem 0 3rem 0;
+        }
+    
+        &__date-box {
+            margin: 0 auto;
+    
+            &--value {
+                font-size: 4.5rem;
+            }
+        }       
     }
 }

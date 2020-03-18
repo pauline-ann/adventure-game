@@ -17,8 +17,26 @@
 }
 
 html {
-    // Global definition defining what 1rem is
+    // Global definition defining what 1rem is (10px)
     font-size: 62.5%;
+
+    // Viewport width < 1200px?
+    @include respond(tab-land) {
+        // 1rem = 9px
+        font-size: 56.25%;
+    }
+
+    // Viewport width < 900px?
+    @include respond(tab-port) {
+        // 1rem = 8px
+        font-size: 50%;
+    }
+
+    // Viewport width > 1800px?
+    @include respond(big-desk) {
+        // 1rem = 12px
+        font-size: 75%; 
+    }
 }
 
 body {

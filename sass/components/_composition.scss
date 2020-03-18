@@ -8,31 +8,61 @@
         position: absolute;
         z-index: 10;
         transition: all .2s;
+        filter: saturate(.8) contrast(.8);
+
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.333333%;
+            box-shadow: 0 1.5rem 2rem rgba($color-black, .2);
+        }
 
         &--p1 {
             left: 0;
             top: -2rem;
+
+            @include respond(tab-port) {
+                top: 0;
+                transform: scale(1.25);
+            }
         }
 
         &--p2 {
             right: 0;
             top: 2rem;
+
+            @include respond(tab-port) {
+                top: 2rem;
+                transform: scale(1.35);
+                z-index: 25;
+            }
         }
 
         &--p3 {
             left: 20%;
-            top: 10rem; 
+            top: 10rem;
+
+            @include respond(tab-port) {
+                left: 0;
+                top: -.5rem;
+                transform: scale(1.2);
+            }
         }
 
         &:hover {
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2.5rem 3rem rgba($color-black, .5);
             z-index: 20;
+
+            @include respond(tab-port) {
+                transform: scale(1.35) translateY(-1.5rem);
+                z-index: 30;
+            }
         }
 
     }
 
     &:hover &__photo:not(:hover) {
-        transform: scale(.95);
+        transform: scale(1.05);
     }
 }

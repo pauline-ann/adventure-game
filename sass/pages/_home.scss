@@ -90,6 +90,7 @@
         rgba($color-white, .8) 50%,
         transparent 50%),
         url(../img/LOM-signup-small.jpg);
+    filter: opacity(.8) brightness(1.1);
     background-size: 100%;
     border-radius: .5rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);

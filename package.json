@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Landing page for The Legend of Marceline",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "serve": "^11.3.0"
+  },
   "devDependencies": {
     "node-sass": "^4.13.1"
   },

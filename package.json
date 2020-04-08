@@ -11,7 +11,7 @@
   },
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "start": "npm compile:sass & live-server"
+    "start": "npm compile:sass & serve"
   },
   "repository": {
     "type": "git",

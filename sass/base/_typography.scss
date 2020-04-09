@@ -14,7 +14,7 @@ body {
     backface-visibility: hidden;
 
     @include respond(big-desk) {
-        line-height: 2.1;
+        line-height: 2.4;
     }
 
     @include respond(phone) {

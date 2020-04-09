@@ -10,7 +10,12 @@ body {
     color: $color-white;
     text-transform: uppercase;
     font-family: 'LOZ-font', sans-serif;
+    text-shadow: 0 0 15px grey;
     backface-visibility: hidden;
+
+    @include respond(big-desk) {
+        line-height: 2;
+    }
 
     @include respond(phone) {
         line-height: .8;
@@ -23,6 +28,11 @@ body {
         letter-spacing: 2.8rem;
         text-align: right;
         animation: moveInRight 2s ease-out;
+
+        @include respond(big-desk) {
+            font-size: 3.33rem;
+            letter-spacing: 3.73rem;
+        }
 
         @include respond(phone) {
             font-size: 2.03rem;
@@ -40,6 +50,11 @@ body {
         &--big {
             font-size: 14rem;
 
+            @include respond(big-desk) {
+                font-size: 18.7rem;
+                letter-spacing: 1.33rem;
+            }
+
             @include respond(phone) {
                 font-size: 10.5rem;
                 letter-spacing: .75rem;
@@ -48,6 +63,11 @@ body {
         
         &--small {
             font-size: 10rem;
+
+            @include respond(big-desk) {
+                font-size: 13.3rem;
+                letter-spacing: 1.33rem;
+            }
 
             @include respond(phone) {
                 font-size: 7.5rem;
@@ -63,6 +83,11 @@ body {
         letter-spacing: .8rem;
         text-align: right;
         animation: moveInRight 2s ease-out;
+
+        @include respond(big-desk) {
+            font-size: 3rem;
+            letter-spacing: 1.1rem;
+        }
 
         @include respond(phone) {
             font-size: 2.25rem;

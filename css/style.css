@@ -65,7 +65,11 @@ body {
   color: #fff;
   text-transform: uppercase;
   font-family: 'LOZ-font', sans-serif;
+  text-shadow: 0 0 15px grey;
   backface-visibility: hidden; }
+  @media (min-width: 112.5em) {
+    .heading-primary {
+      line-height: 2; } }
   @media (max-width: 37.5em) {
     .heading-primary {
       line-height: .8; } }
@@ -76,6 +80,10 @@ body {
     letter-spacing: 2.8rem;
     text-align: right;
     animation: moveInRight 2s ease-out; }
+    @media (min-width: 112.5em) {
+      .heading-primary--legend {
+        font-size: 3.33rem;
+        letter-spacing: 3.73rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--legend {
         font-size: 2.03rem;
@@ -88,12 +96,20 @@ body {
     animation: moveInLeft 2s ease-out; }
     .heading-primary--marceline--big {
       font-size: 14rem; }
+      @media (min-width: 112.5em) {
+        .heading-primary--marceline--big {
+          font-size: 18.7rem;
+          letter-spacing: 1.33rem; } }
       @media (max-width: 37.5em) {
         .heading-primary--marceline--big {
           font-size: 10.5rem;
           letter-spacing: .75rem; } }
     .heading-primary--marceline--small {
       font-size: 10rem; }
+      @media (min-width: 112.5em) {
+        .heading-primary--marceline--small {
+          font-size: 13.3rem;
+          letter-spacing: 1.33rem; } }
       @media (max-width: 37.5em) {
         .heading-primary--marceline--small {
           font-size: 7.5rem;
@@ -105,6 +121,10 @@ body {
     letter-spacing: .8rem;
     text-align: right;
     animation: moveInRight 2s ease-out; }
+    @media (min-width: 112.5em) {
+      .heading-primary--breath {
+        font-size: 3rem;
+        letter-spacing: 1.1rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--breath {
         font-size: 2.25rem;

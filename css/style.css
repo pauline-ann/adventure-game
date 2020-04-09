@@ -69,7 +69,7 @@ body {
   backface-visibility: hidden; }
   @media (min-width: 112.5em) {
     .heading-primary {
-      line-height: 2; } }
+      line-height: 2.1; } }
   @media (max-width: 37.5em) {
     .heading-primary {
       line-height: .8; } }

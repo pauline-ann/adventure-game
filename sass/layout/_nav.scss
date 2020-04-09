@@ -21,6 +21,11 @@
             right: 4rem;
         }
 
+        @include respond(phone) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
+
         &:hover > .nav__icon {
             font-size: 4rem;
         }
@@ -50,14 +55,19 @@
         top: 5.5rem;
         right: 5.5rem;
         background-image: radial-gradient(
-            $color-wood,
+            darken($color-wood, 1),
             $color-forestyellow-light);
         z-index: 1000;
-        transition: transform .8s cubic-bezier(.86, 0, .07, 1);
+        transition: transform .9s cubic-bezier(.86, 0, .07, 1);
 
         @include respond(tab-port) {
             top: 4.5rem;
             right: 4.5rem;
+        }
+
+        @include respond(phone) {
+            top: 2.5rem;
+            right: 2.5rem;
         }
     }
 

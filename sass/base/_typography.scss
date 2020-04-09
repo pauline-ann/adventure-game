@@ -18,7 +18,7 @@ body {
     }
 
     @include respond(phone) {
-        line-height: .8;
+        line-height: .25;
     }
 
     &--legend {
@@ -35,8 +35,8 @@ body {
         }
 
         @include respond(phone) {
-            font-size: 2.03rem;
-            letter-spacing: 2.1rem;
+            font-size: 1.4rem;
+            letter-spacing: 2rem;
         }
     }
     
@@ -56,7 +56,7 @@ body {
             }
 
             @include respond(phone) {
-                font-size: 10.5rem;
+                font-size: 9rem;
                 letter-spacing: .75rem;
             }
         }
@@ -70,7 +70,7 @@ body {
             }
 
             @include respond(phone) {
-                font-size: 7.5rem;
+                font-size: 6.5rem;
                 letter-spacing: .75rem;
             }
         }
@@ -90,8 +90,8 @@ body {
         }
 
         @include respond(phone) {
-            font-size: 2.25rem;
-            letter-spacing: .6rem;
+            font-size: 1.6rem;
+            letter-spacing: .7rem;
         }
     }
 }

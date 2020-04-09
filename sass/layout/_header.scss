@@ -29,6 +29,11 @@
         left: 5rem;
         animation: fadeIn 1s ease-out;
         animation-fill-mode: backwards;
+
+        @include respond(phone) {
+            top: 1rem;
+            left: 3rem;
+        }
     }
 
     &__text-box {

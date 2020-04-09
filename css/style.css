@@ -953,8 +953,8 @@ body {
       right: 4.5rem; } }
   @media (max-width: 37.5em) {
     .nav__background {
-      top: 2.5rem;
-      right: 2.5rem; } }
+      top: 2.6rem;
+      right: 2.6rem; } }
 
 .nav__menu {
   height: 100vh;
@@ -990,6 +990,9 @@ body {
     padding: .5rem 1rem;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
     background-size: 240%; }
+    @media (max-width: 37.5em) {
+      .nav__link:link, .nav__link:visited {
+        font-weight: 300; } }
   .nav__link:active, .nav__link:hover {
     background-position: 100%;
     color: #AE987B; }

@@ -953,8 +953,8 @@ body {
       right: 4.5rem; } }
   @media (max-width: 37.5em) {
     .nav__background {
-      top: 2.6rem;
-      right: 2.6rem; } }
+      top: 3rem;
+      right: 3rem; } }
 
 .nav__menu {
   height: 100vh;

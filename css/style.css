@@ -87,7 +87,7 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary--legend {
         font-size: 1.4rem;
-        letter-spacing: 1.75rem; } }
+        letter-spacing: 1.6rem; } }
   .heading-primary--marceline {
     display: block;
     font-weight: 400;
@@ -103,7 +103,7 @@ body {
       @media (max-width: 37.5em) {
         .heading-primary--marceline--big {
           font-size: 9rem;
-          letter-spacing: .75rem; } }
+          letter-spacing: .6rem; } }
     .heading-primary--marceline--small {
       font-size: 10rem; }
       @media (min-width: 112.5em) {
@@ -113,7 +113,7 @@ body {
       @media (max-width: 37.5em) {
         .heading-primary--marceline--small {
           font-size: 6.5rem;
-          letter-spacing: .75rem; } }
+          letter-spacing: .6rem; } }
   .heading-primary--breath {
     display: block;
     font-size: 3rem;
@@ -1042,7 +1042,8 @@ body {
       background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.2), rgba(126, 126, 126, 0.2)), url(../img/LOM-features-smaller.jpg); } }
   @media (max-width: 37.5em) {
     .section-features {
-      padding: 10rem 0; } }
+      padding: 10rem 0;
+      background-image: linear-gradient(to right bottom, rgba(238, 238, 238, 0.2), rgba(126, 126, 126, 0.2)), url(../img/LOM-features-mobile.jpg); } }
   .section-features > * {
     transform: skewY(4deg); }
 

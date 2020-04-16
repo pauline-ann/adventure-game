@@ -36,7 +36,7 @@ body {
 
         @include respond(phone) {
             font-size: 1.4rem;
-            letter-spacing: 1.75rem;
+            letter-spacing: 1.6rem;
         }
     }
     
@@ -57,7 +57,7 @@ body {
 
             @include respond(phone) {
                 font-size: 9rem;
-                letter-spacing: .75rem;
+                letter-spacing: .6rem;
             }
         }
         
@@ -71,7 +71,7 @@ body {
 
             @include respond(phone) {
                 font-size: 6.5rem;
-                letter-spacing: .75rem;
+                letter-spacing: .6rem;
             }
         }
     }

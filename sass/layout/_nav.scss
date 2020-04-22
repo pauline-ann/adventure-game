@@ -88,6 +88,7 @@
         @include center-element;
         list-style: none;
         text-align: center;
+        visibility: hidden;
     }
 
     &__item {
@@ -133,6 +134,10 @@
         opacity: 1;
         visibility: visible;
         transform: translate(0);
+    }
+
+    &__checkbox:checked ~ &__list {
+        visibility: visible;
     }
 
     &__checkbox:checked ~ &__button > &__icon--open {

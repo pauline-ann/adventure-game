@@ -9,7 +9,24 @@ A promotional website designed and built for a fictional adventure game inspired
 * For fun!
 
 # Screenshots
-[Include screenshots/demo here]
+#### Website Intro/Header Animations
+<img src="img/readme/LOM-gif-1.gif">
+
+#### Fullscreen Animated Navbar
+<img src="img/readme/LOM-gif-2.gif">
+
+#### Pop-up CSS Modal
+<img src="img/readme/LOM-gif-3.gif">
+
+#### Responsive Design
+##### Desktop View
+<img src="img/readme/LOM-sc-1.png" width="400">
+
+##### Mobile View
+<img src="img/readme/LOM-sc-2.png" width="400">
+
+#### Form Validation
+<img src="img/readme/LOM-sc-3.png" width="500">
 
 # Tech/framework used
 **Built with:**
@@ -22,7 +39,7 @@ A promotional website designed and built for a fictional adventure game inspired
 # Features
 - This website features a sleek, modern, and elegant design. It has been made responsive for screen sizes ranging from small phones to very large desktops.
 - It takes advantage of CSS and pushes it to its' fullest capacity, using CSS to implement features that are typically thought to require JavaScript in order to function. ie) the pop-up modal
-- Sass syntax streamlines the process and makes development a breeze. 
+- Sass syntax streamlines development and makes CSS much more efficient, helping to use it to its fullest potential. 
 
 # Code Example
 ### Sass
@@ -31,7 +48,7 @@ Please reference <a href="https://sass-lang.com/documentation/syntax" target="_b
 ### Custom CSS Grid
 This website uses a responsive CSS grid similar to <a href="https://getbootstrap.com/" target="_blank">Bootstrap's</a>, however I wanted to challenge myself and try building my own grid.
 
-#### Examples on how to use the CSS grid:
+#### To use create columns of varying width:
 
 2 Columns - equal width
 ```
@@ -112,11 +129,39 @@ This website uses a responsive CSS grid similar to <a href="https://getbootstrap
 </div>
 ```
 
+### Modal Popup
+This website includes an modern and responsive modal pop-up component that can be reused for multiple locations. 
+
+#### Sample Implementation:
+```
+<div class="modal" id="modal">
+        <div class="modal__content">
+            <a href="#nav-button" class="modal__close-btn">
+                <i class="modal__close-btn--icon material-icons">close</i>
+            </a>
+            <div class="modal__image-section">
+                <!-- Image -->
+            </div>
+            <div class="modal__text-section">
+                <!-- Text -->
+            </div>
+        </div>
+    </div>
+```
+
 # Installation
 #### Steps to get a development environment up and running:
-1. examples/explanations
-2. 
-3. 
+1. Install a code editor, such as <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
+2. Have a web browser ready to test your website, such as <a href="https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjw1v_0BRAkEiwALFkj5rzKWz3km7pGWUxAOreaHuoMV4wyQ5HRYJBvFdeEAKsh5YJBdRhlAhoC2mAQAvD_BwE&gclsrc=aw.ds" target="_blank">Google Chrome</a> (recommended for its highly useful developer tools!)
+3. Install <a href="https://nodejs.org/en/" target="_blank">Node.js</a> to your local computer
+	- To test if it's been successfully installed, type `node -v` into your terminal and search for an output
+	- If it returns the version number, then it's been installed!
+4. Create a package.json file (this will contain the definitions of your package and provide the place for npm to write packages that we will use)
+	- In the terminal for the project directory, run `npm init` and follow the instructions to initiate the package.json file
+5. Install <a href="https://www.npmjs.com/package/node-sass" target="_blank">node-sass</a> npm package to project
+	- In the terminal for the project directory, run `npm install node-sass --save-dev`
+	- `--save-dev` lists the package as a developer dependency, ie) we use it during project development
+6. Ready for development!
 
 # Credits
 Website architected and design modified by <a href="http://paulineann.me" class="footer__link"

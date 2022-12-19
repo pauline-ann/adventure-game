@@ -164,7 +164,7 @@ This website includes an modern and responsive modal pop-up component that can b
 6. Ready for development!
 
 # Credits
-Website architected and design modified by <a href="http://paulineann.me" class="footer__link"
+Website developed and designed by <a href="http://paulineann.me" class="footer__link"
                         target="_blank">Pauline Bantayan</a> in 2020.<br />
                     Initial design inspiration from Udemy course by <a
                         href="https://www.udemy.com/course/advanced-css-and-sass/" class="footer__link"

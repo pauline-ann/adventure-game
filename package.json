@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/pauline-ann/adventure-game/issues"
   },
-  "homepage": "https://github.com/pauline-ann/adventure-game#readme"
+  "homepage": "https://github.com/pauline-ann/adventure-game#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
 }

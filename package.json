@@ -4,10 +4,7 @@
   "description": "Landing page for The Legend of Marceline",
   "main": "index.js",
   "dependencies": {
-    "serve": "^11.3.0"
-  },
-  "devDependencies": {
-    "node-sass": "^4.13.1"
+    "serve": "^14.1.2"
   },
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
